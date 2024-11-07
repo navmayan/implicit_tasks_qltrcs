@@ -1,11 +1,8 @@
 define(['pipAPI','underscore'], function(APIConstructor, _) {
-	/**
-	You can modify most of what you need to modify in the settings 
-	defined in epObj below. Or use an external script to call the epExtension function.
-	**/
+//Adapted from Bengayev, E. (2020, July 27). Running Project Implicit’s AMP from Qualtrics [Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-amp/  
 
 	/**
-	Created by: Yoav Bar-Anan (baranan@gmail.com). 
+	Created by: Yoav Bar-Anan (baranan@gmail.com), modified by Jérémy Béna for the present experiment. 
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
@@ -22,14 +19,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 850,
-				proportions : 0.7,
-				background: '#ffffff',
-				borderWidth: 5,
-				canvasBackground: '#ffffff',
+				proportions : .8,
+				background: '#000000',
+				borderWidth: 4,
+				canvasBackground: '#000000',
 				borderColor: 'lightblue'
 			}, 
 			//The CSS for all the prime stimuli.
-			primeStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			primeStimulusCSS : {color:'#ffffff','font-size':'2.3em'},
 			//The prime categories.
 			primeCats :  [
 				{
@@ -51,7 +48,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				mediaArray : [{word : 'Table'}, {word : 'Chair'}]
 			},
 			//The CSS for all the target stimuli (usually irrelevant because the targets are Chinese pictographs.
-			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			targetStimulusCSS : {color:'#ffffff','font-size':'2.3em'},
 			//The prime categories.
 			targetCats :  [
 				{
@@ -65,20 +62,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 						{image : 'pic40.jpg'}, {image : 'pic41.jpg'}, {image : 'pic42.jpg'}, {image : 'pic43.jpg'}, {image : 'pic44.jpg'}, {image : 'pic45.jpg'}, {image : 'pic46.jpg'}, {image : 'pic47.jpg'}, {image : 'pic48.jpg'}, {image : 'pic49.jpg'}, 
 						{image : 'pic50.jpg'}, {image : 'pic51.jpg'}, {image : 'pic52.jpg'}, {image : 'pic53.jpg'}, {image : 'pic54.jpg'}, {image : 'pic55.jpg'}, {image : 'pic56.jpg'}, {image : 'pic57.jpg'}, {image : 'pic58.jpg'}, {image : 'pic59.jpg'}, 
 						{image : 'pic60.jpg'}, {image : 'pic61.jpg'}, {image : 'pic62.jpg'}, {image : 'pic63.jpg'}, {image : 'pic64.jpg'}, {image : 'pic65.jpg'}, {image : 'pic66.jpg'}, {image : 'pic67.jpg'}, {image : 'pic68.jpg'}, {image : 'pic69.jpg'}, 
-						{image : 'pic70.jpg'}, {image : 'pic71.jpg'}, {image : 'pic72.jpg'}, {image : 'pic73.jpg'}, {image : 'pic74.jpg'}, {image : 'pic75.jpg'}, {image : 'pic76.jpg'}, {image : 'pic77.jpg'}, {image : 'pic78.jpg'}, {image : 'pic79.jpg'}, 
-						{image : 'pic80.jpg'}, {image : 'pic81.jpg'}, {image : 'pic82.jpg'}, {image : 'pic83.jpg'}, {image : 'pic84.jpg'}, {image : 'pic85.jpg'}, {image : 'pic86.jpg'}, {image : 'pic87.jpg'}, {image : 'pic88.jpg'}, {image : 'pic89.jpg'}, 
-						{image : 'pic90.jpg'}, {image : 'pic91.jpg'}, {image : 'pic92.jpg'}, {image : 'pic93.jpg'}, {image : 'pic94.jpg'}, {image : 'pic95.jpg'}, {image : 'pic96.jpg'}, {image : 'pic97.jpg'}, {image : 'pic98.jpg'}, {image : 'pic99.jpg'}, 
-						{image : 'pic110.jpg'}, {image : 'pic111.jpg'}, {image : 'pic112.jpg'}, {image : 'pic113.jpg'}, {image : 'pic114.jpg'}, {image : 'pic115.jpg'}, {image : 'pic116.jpg'}, {image : 'pic117.jpg'}, {image : 'pic118.jpg'}, {image : 'pic119.jpg'}, 
-						{image : 'pic120.jpg'}, {image : 'pic121.jpg'}, {image : 'pic122.jpg'}, {image : 'pic123.jpg'}, {image : 'pic124.jpg'}, {image : 'pic125.jpg'}, {image : 'pic126.jpg'}, {image : 'pic127.jpg'}, {image : 'pic128.jpg'}, {image : 'pic129.jpg'}, 
-						{image : 'pic130.jpg'}, {image : 'pic131.jpg'}, {image : 'pic132.jpg'}, {image : 'pic133.jpg'}, {image : 'pic134.jpg'}, {image : 'pic135.jpg'}, {image : 'pic136.jpg'}, {image : 'pic137.jpg'}, {image : 'pic138.jpg'}, {image : 'pic139.jpg'}, 
-						{image : 'pic140.jpg'}, {image : 'pic141.jpg'}, {image : 'pic142.jpg'}, {image : 'pic143.jpg'}, {image : 'pic144.jpg'}, {image : 'pic145.jpg'}, {image : 'pic146.jpg'}, {image : 'pic147.jpg'}, {image : 'pic148.jpg'}, {image : 'pic149.jpg'}, 
-						{image : 'pic150.jpg'}, {image : 'pic151.jpg'}, {image : 'pic152.jpg'}, {image : 'pic153.jpg'}, {image : 'pic154.jpg'}, {image : 'pic155.jpg'}, {image : 'pic156.jpg'}, {image : 'pic157.jpg'}, {image : 'pic158.jpg'}, {image : 'pic159.jpg'}, 
-						{image : 'pic160.jpg'}, {image : 'pic161.jpg'}, {image : 'pic162.jpg'}, {image : 'pic163.jpg'}, {image : 'pic164.jpg'}, {image : 'pic165.jpg'}, {image : 'pic166.jpg'}, {image : 'pic167.jpg'}, {image : 'pic168.jpg'}, {image : 'pic169.jpg'}, 
-						{image : 'pic170.jpg'}, {image : 'pic171.jpg'}, {image : 'pic172.jpg'}, {image : 'pic173.jpg'}, {image : 'pic174.jpg'}, {image : 'pic175.jpg'}, {image : 'pic176.jpg'}, {image : 'pic177.jpg'}, {image : 'pic178.jpg'}, {image : 'pic179.jpg'}, 
-						{image : 'pic180.jpg'}, {image : 'pic181.jpg'}, {image : 'pic182.jpg'}, {image : 'pic183.jpg'}, {image : 'pic184.jpg'}, {image : 'pic185.jpg'}, {image : 'pic186.jpg'}, {image : 'pic187.jpg'}, {image : 'pic188.jpg'}, {image : 'pic189.jpg'}, 
-						{image : 'pic190.jpg'}, {image : 'pic191.jpg'}, {image : 'pic192.jpg'}, {image : 'pic193.jpg'}, {image : 'pic194.jpg'}, {image : 'pic195.jpg'}, {image : 'pic196.jpg'}, {image : 'pic197.jpg'}, {image : 'pic198.jpg'}, {image : 'pic199.jpg'}, 
-						{image : 'pic200.jpg'}
-					]					
+						{image : 'pic70.jpg'}
+					]
+					
 				}
 			],
 			
@@ -102,7 +88,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//The mask stimulus in the example block
 			exampleMaskStimulus : {
 				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'ampmaskr.jpg'}
+				media : {image:'ampmask.jpg'}
 			}, 
 			//The mask stimulus 
 			maskStimulus : {
@@ -111,21 +97,21 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 0. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 1.
+			sortingLabel1 : 'Unpleasant', //Response is coded as 0. 
+			sortingLabel2 : 'Pleasant',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
-			fontColor : '#000000', 
+			fontColor : '#ffffff', 
 
-			rightKey : 'I', 
-			leftKey : 'E', 
+			rightKey : 'i', 
+			leftKey : 'e', 
 			
 			base_url : {//Where are your images at?
-				image : 'https://navmayan.github.io/implicit_tasks_qltrcs/images'
+				image : 'https://jeremybena.github.io/APR_AMP/images'
 			}, 
 
-			trialsInBlock : [60],//[40, 40, 40], //Number of trials in each block 
+			trialsInBlock : [60], //Number of trials in each block 
 			trialsInExample : 10, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
@@ -254,8 +240,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
-			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the task<br/><br/>Press "space" to continue to next task.</p></div>', 
+			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
+			'You have completed the first Visual Processing Task.<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
@@ -403,10 +389,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:2,top:2},media:{word:'key: '+ piCurrent.leftKey.toUpperCase()}, css:{color:piCurrent.fontColor,'font-size':'1em'}},
-				{location:{right:2,top:2},media:{word:'key: ' + piCurrent.rightKey.toUpperCase()},  css:{color:piCurrent.fontColor,'font-size':'1em'}},
-				{location:{left:2,top:5},media:{word:leftSortingLabel}, css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}},
-				{location:{right:2,top:5},media:{word:rightSortingLabel},  css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}}
+				{location:{left:6,bottom:8},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'20px'}},
+				{location:{right:6,bottom:8},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'20px'}}
 			];
 		var layout = piCurrent.responses==2 ? layout2 : [];
 			
@@ -545,7 +529,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: [
     		    {
     		        location:{top:3},
-    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
+    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#ffffff','font-size':'1em', 'z-index':'100'}
     		    }
     		],
 			input: [
@@ -1081,14 +1065,53 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		var blockNum = 1;
 		if (piCurrent.trialsInExample > 0)
 		{
-		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
-			//Instructions trial
+		    var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst3 = piCurrent.responses==2 ? piCurrent.exampleBlockInst3 : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst4 = piCurrent.responses==2 ? piCurrent.exampleBlockInst4 : piCurrent.exampleBlockInst7;
+
+			//Instructions trial 1/4
 			trialSequence.push(
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{inherit:'dummyForLog'},
+					]
+				}
+			);
+			//Instructions trial 2/4
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{inherit:'dummyForLog'}
+					]
+				}
+			);
+			
+			//Instructions trial 3/4
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
+						{inherit:'dummyForLog'}
+					]
+				}
+			);
+			
+			//Instructions trial 4/4
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1096,7 +1119,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//example trials
 			trialSequence.push(
 				{ 
-					mixer: 'repeat',// Repeat 3 times the trial.
+					mixer: 'repeat',// Repeat x times the trial.
 					times: piCurrent.trialsInExample,
 					data : [
 						{
@@ -1128,7 +1151,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
-					stimuli: [ {media:{html:fromTemplate({template:blockInst, blockNum:iBlock+2})}, nolog:true}, {inherit:'dummyForLog'}]
+					stimuli: [ {media:{html:fromTemplate({template:blockInst, blockNum:iBlock+2})}, nolog:true, css:{color:piCurrent.fontColor}}, {inherit:'dummyForLog'}]
 				}
 			);
 			//trials
@@ -1154,7 +1177,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			inherit : "inst",
 			stimuli: [
 				{//The instructions stimulus
-					media:{html:piCurrent.endText,data:{block:blockNum, condition:'end'}}, nolog:true
+					media:{html:piCurrent.endText,data:{block:blockNum, condition:'end'}}, nolog:true, color:piCurrent.fontColor
 				}, 
 				{//For the logging
 					inherit:'dummyForLog'
