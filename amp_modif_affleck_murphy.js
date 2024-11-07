@@ -37,8 +37,8 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
 		},
 
-		base_url: {//Where are your images at?
-			image: 'https://navmayan.github.io/implicit_tasks_qltrcs/images'
+		base_url : {//Where are your images at?
+			image : 'https://navmayan.github.io/implicit_tasks_qltrcs/images'
 		}
 	});
 });
