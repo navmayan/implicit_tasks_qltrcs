@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://github.com/navmayan/implicit_tasks_qltrcs/AMP_actors_parameters_modified.js'], function(APIConstructor, ampExtension){
+define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_parameters_modified.js'], function(APIConstructor, ampExtension){
 //Adapted from Bengayev, E. (2020, July 27). Running Project Implicit’s AMP from Qualtrics [Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-amp/  
 	var API = new APIConstructor();
 	
@@ -37,8 +37,8 @@ define(['pipAPI', 'https://github.com/navmayan/implicit_tasks_qltrcs/AMP_actors_
 			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
 		},
 
-		base_url : {//Where are your images at?
-			image : 'https://github.com/navmayan/implicit_tasks_qltrcs/images'
+		base_url: {//Where are your images at?
+			image: 'https://navmayan.github.io/implicit_tasks_qltrcs/images'
 		}
 	});
 });
