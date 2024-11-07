@@ -175,24 +175,24 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff"> </p></div>',
-			middleBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Continue to start the task. ' + 
+			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'Continue with the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
+			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
+			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
+			'Judge each person and not the Chinese character that appears after it.' + 
+			'Pictures of Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
-			lastBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
+			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
+			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
+			'Judge each person and not the Chinese character that appears after it.' + 
+			'Pictures of Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -241,7 +241,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the first Visual Processing Task.<br/><br/>Press "space" to resume the study.</p></div>', 
+			'You have completed the Visual Processing Task.<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
