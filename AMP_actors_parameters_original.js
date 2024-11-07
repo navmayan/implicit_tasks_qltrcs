@@ -122,7 +122,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			leftKey : 'E', 
 			
 			base_url : {//Where are your images at?
-				image : 'https://github.com/navmayan/implicit_tasks_qltrcs/images'
+				image : 'https://navmayan.github.io/implicit_tasks_qltrcs/images'
 			}, 
 
 			trialsInBlock : [60],//[40, 40, 40], //Number of trials in each block 
