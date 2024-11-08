@@ -4,14 +4,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 	
 	
 	return ampExtension({
-		canvas : {
-				maxWidth: 850,
-				proportions : .8,
-				background: '#000000',
-				borderWidth: 4,
-				canvasBackground: '#000000',
-				borderColor: '#ffffff'
-			}, 
+
 		primeCats :  [
 			{
 				nameForFeedback : 'Ben Affleck',  //Will be used in the user feedback 
@@ -96,69 +89,69 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			
 			
 			//Instructions text for the 2-responses version.
-			exampleBlockInst1: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			exampleBlockInst1: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			'Now you will complete a Visual Processing Task.<br/><br/>' + 
 			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
 			'Your job is to judge whether each person is a pleasant individual or an unpleasant individual.<br/><br/>' +
 			'Of course, there are no right or wrong answers. Just report your intuition as to whether each person is a pleasant or unpleasant individual.<br/><br/>' +
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 1/3]</p></div>',
-			exampleBlockInst2: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="#000000">[Instructions 1/3]</p></div>',
+			exampleBlockInst2: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
 			'If you think someone is a more pleasant individual than average, press the E key on the left.<br/><br/>' + 
 			'If you think someone is a less pleasant individual than average, press the I key on the right.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 2/3]</p></div>',
-			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="#000000">[Instructions 2/3]</p></div>',
+			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			'It is important to note that the Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
 			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the Chinese characters bias your judgment of the people!<br/><br/>' + 
 			'Give us an honest assessment of each person, regardless of the images that follow them.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'To continue, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 3/3]</p></div>',
-			exampleBlockInst4: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="#000000">[Instructions 3/3]</p></div>',
+			exampleBlockInst4: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			'To get a feel for the task, we will begin with 10 practice trials.<br/><br/>' + 
 			"Again, your task is to judge whether the people are more pleasant individuals or less pleasant individuals than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'When you are ready to try a few practice trials, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Practice trials]</p></div>',
-			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="#000000">[Practice trials]</p></div>',
+			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			"Practice is now complete and the Visual Processing Task will now begin.<br/><br/>" + 
 			"As a reminder, if you think someone is a more pleasant individual than average, press the 'E' key.<br/><br/>" + 
 			"If you think someone is a less pleasant individual than average, press the 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff"> </p></div>',
-			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="#000000"> </p></div>',
+			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			'Continue with the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'Judge each person and not the Chinese character that appears after it. ' + 
 			'Pictures of Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
-			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'<color="#000000">[Round blockNum of nBlocks]</p></div>',
+			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#000000"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'Judge each person and not the Chinese character that appears after it. ' + 
 			'Pictures of Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial"><color="#000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
+			'<color="#000000">[Round blockNum of nBlocks]</p></div>',
 
 
 			//Instructions text for the 7-responses version.
@@ -202,7 +195,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
-			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
+			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="#000000">'+
 			'You have completed the Visual Processing Task.<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
