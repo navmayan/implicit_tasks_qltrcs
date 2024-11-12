@@ -195,7 +195,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'The rules are exactly the same:<br/><br/>' + 
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
-			'Judge each Chinese character and not the picture that appears before it .' + 
+			'Judge each Chinese character and not the picture that appears before it. ' + 
 			'Pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
