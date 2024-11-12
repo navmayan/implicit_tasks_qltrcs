@@ -1,8 +1,11 @@
 define(['pipAPI','underscore'], function(APIConstructor, _) {
-//Adapted from Bengayev, E. (2020, July 27). Running Project Implicit’s AMP from Qualtrics [Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-amp/  
+	/**
+	You can modify most of what you need to modify in the settings 
+	defined in epObj below. Or use an external script to call the epExtension function.
+	**/
 
 	/**
-	Created by: Yoav Bar-Anan (baranan@gmail.com), modified by Jérémy Béna for the present experiment. 
+	Created by: Yoav Bar-Anan (baranan@gmail.com). 
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
@@ -19,14 +22,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 850,
-				proportions : .8,
-				background: '#000000',
-				borderWidth: 4,
-				canvasBackground: '#000000',
+				proportions : 0.7,
+				background: '#ffffff',
+				borderWidth: 5,
+				canvasBackground: '#ffffff',
 				borderColor: 'lightblue'
 			}, 
 			//The CSS for all the prime stimuli.
-			primeStimulusCSS : {color:'#ffffff','font-size':'2.3em'},
+			primeStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
 			//The prime categories.
 			primeCats :  [
 				{
@@ -48,7 +51,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				mediaArray : [{word : 'Table'}, {word : 'Chair'}]
 			},
 			//The CSS for all the target stimuli (usually irrelevant because the targets are Chinese pictographs.
-			targetStimulusCSS : {color:'#ffffff','font-size':'2.3em'},
+			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
 			//The prime categories.
 			targetCats :  [
 				{
@@ -62,7 +65,19 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 						{image : 'pic40.jpg'}, {image : 'pic41.jpg'}, {image : 'pic42.jpg'}, {image : 'pic43.jpg'}, {image : 'pic44.jpg'}, {image : 'pic45.jpg'}, {image : 'pic46.jpg'}, {image : 'pic47.jpg'}, {image : 'pic48.jpg'}, {image : 'pic49.jpg'}, 
 						{image : 'pic50.jpg'}, {image : 'pic51.jpg'}, {image : 'pic52.jpg'}, {image : 'pic53.jpg'}, {image : 'pic54.jpg'}, {image : 'pic55.jpg'}, {image : 'pic56.jpg'}, {image : 'pic57.jpg'}, {image : 'pic58.jpg'}, {image : 'pic59.jpg'}, 
 						{image : 'pic60.jpg'}, {image : 'pic61.jpg'}, {image : 'pic62.jpg'}, {image : 'pic63.jpg'}, {image : 'pic64.jpg'}, {image : 'pic65.jpg'}, {image : 'pic66.jpg'}, {image : 'pic67.jpg'}, {image : 'pic68.jpg'}, {image : 'pic69.jpg'}, 
-						{image : 'pic70.jpg'}
+						{image : 'pic70.jpg'}, {image : 'pic71.jpg'}, {image : 'pic72.jpg'}, {image : 'pic73.jpg'}, {image : 'pic74.jpg'}, {image : 'pic75.jpg'}, {image : 'pic76.jpg'}, {image : 'pic77.jpg'}, {image : 'pic78.jpg'}, {image : 'pic79.jpg'}, 
+						{image : 'pic80.jpg'}, {image : 'pic81.jpg'}, {image : 'pic82.jpg'}, {image : 'pic83.jpg'}, {image : 'pic84.jpg'}, {image : 'pic85.jpg'}, {image : 'pic86.jpg'}, {image : 'pic87.jpg'}, {image : 'pic88.jpg'}, {image : 'pic89.jpg'}, 
+						{image : 'pic90.jpg'}, {image : 'pic91.jpg'}, {image : 'pic92.jpg'}, {image : 'pic93.jpg'}, {image : 'pic94.jpg'}, {image : 'pic95.jpg'}, {image : 'pic96.jpg'}, {image : 'pic97.jpg'}, {image : 'pic98.jpg'}, {image : 'pic99.jpg'}, 
+						{image : 'pic110.jpg'}, {image : 'pic111.jpg'}, {image : 'pic112.jpg'}, {image : 'pic113.jpg'}, {image : 'pic114.jpg'}, {image : 'pic115.jpg'}, {image : 'pic116.jpg'}, {image : 'pic117.jpg'}, {image : 'pic118.jpg'}, {image : 'pic119.jpg'}, 
+						{image : 'pic120.jpg'}, {image : 'pic121.jpg'}, {image : 'pic122.jpg'}, {image : 'pic123.jpg'}, {image : 'pic124.jpg'}, {image : 'pic125.jpg'}, {image : 'pic126.jpg'}, {image : 'pic127.jpg'}, {image : 'pic128.jpg'}, {image : 'pic129.jpg'}, 
+						{image : 'pic130.jpg'}, {image : 'pic131.jpg'}, {image : 'pic132.jpg'}, {image : 'pic133.jpg'}, {image : 'pic134.jpg'}, {image : 'pic135.jpg'}, {image : 'pic136.jpg'}, {image : 'pic137.jpg'}, {image : 'pic138.jpg'}, {image : 'pic139.jpg'}, 
+						{image : 'pic140.jpg'}, {image : 'pic141.jpg'}, {image : 'pic142.jpg'}, {image : 'pic143.jpg'}, {image : 'pic144.jpg'}, {image : 'pic145.jpg'}, {image : 'pic146.jpg'}, {image : 'pic147.jpg'}, {image : 'pic148.jpg'}, {image : 'pic149.jpg'}, 
+						{image : 'pic150.jpg'}, {image : 'pic151.jpg'}, {image : 'pic152.jpg'}, {image : 'pic153.jpg'}, {image : 'pic154.jpg'}, {image : 'pic155.jpg'}, {image : 'pic156.jpg'}, {image : 'pic157.jpg'}, {image : 'pic158.jpg'}, {image : 'pic159.jpg'}, 
+						{image : 'pic160.jpg'}, {image : 'pic161.jpg'}, {image : 'pic162.jpg'}, {image : 'pic163.jpg'}, {image : 'pic164.jpg'}, {image : 'pic165.jpg'}, {image : 'pic166.jpg'}, {image : 'pic167.jpg'}, {image : 'pic168.jpg'}, {image : 'pic169.jpg'}, 
+						{image : 'pic170.jpg'}, {image : 'pic171.jpg'}, {image : 'pic172.jpg'}, {image : 'pic173.jpg'}, {image : 'pic174.jpg'}, {image : 'pic175.jpg'}, {image : 'pic176.jpg'}, {image : 'pic177.jpg'}, {image : 'pic178.jpg'}, {image : 'pic179.jpg'}, 
+						{image : 'pic180.jpg'}, {image : 'pic181.jpg'}, {image : 'pic182.jpg'}, {image : 'pic183.jpg'}, {image : 'pic184.jpg'}, {image : 'pic185.jpg'}, {image : 'pic186.jpg'}, {image : 'pic187.jpg'}, {image : 'pic188.jpg'}, {image : 'pic189.jpg'}, 
+						{image : 'pic190.jpg'}, {image : 'pic191.jpg'}, {image : 'pic192.jpg'}, {image : 'pic193.jpg'}, {image : 'pic194.jpg'}, {image : 'pic195.jpg'}, {image : 'pic196.jpg'}, {image : 'pic197.jpg'}, {image : 'pic198.jpg'}, {image : 'pic199.jpg'}, 
+						{image : 'pic200.jpg'}
 					]
 					
 				}
@@ -88,7 +103,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//The mask stimulus in the example block
 			exampleMaskStimulus : {
 				css : {color:'000000', 'font-size':'3em'}, 
-				media : {image:'ampmask.jpg'}
+				media : {image:'ampmaskr.jpg'}
 			}, 
 			//The mask stimulus 
 			maskStimulus : {
@@ -97,21 +112,21 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Unpleasant', //Response is coded as 0. 
-			sortingLabel2 : 'Pleasant',  //Response is coded as 1.
+			sortingLabel1 : 'Pleasant', //Response is coded as 0. 
+			sortingLabel2 : 'Unpleasant',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
-			fontColor : '#ffffff', 
+			fontColor : '#000000', 
 
 			rightKey : 'i', 
 			leftKey : 'e', 
 			
 			base_url : {//Where are your images at?
-				image : 'https://jeremybena.github.io/APR_AMP/images'
+				image : 'https://baranan.github.io/minno-tasks/images/ampImages'
 			}, 
 
-			trialsInBlock : [40,40,40], //Number of trials in each block 
+			trialsInBlock : [40, 40, 40], //Number of trials in each block 
 			trialsInExample : 10, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
@@ -123,9 +138,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			ITI : 500, //Duration between trials.
 			
 			responses : 2, //Change to 7 for a 1-7 rating
-	        // When using 7 response options, 
-	        // we will Extremely unpleasant, Moderately unpleasant, Slightly unpleasant, neutral, Slightly pleasant, Moderately pleasant, Extremely pleasant.
-		    targetCat : 'Chinese symbol', //The name of the targets (used in the instructions)
+			// When using 7 response options, 
+			// we will Extremely unpleasant, Moderately unpleasant, Slightly unpleasant, neutral, Slightly pleasant, Moderately pleasant, Extremely pleasant.
+			targetCat : 'Chinese symbol', //The name of the targets (used in the instructions)
 			
 			//For the example block (often practice)
 			exampleBlock_fixationDuration : -1, 
@@ -180,7 +195,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'The rules are exactly the same:<br/><br/>' + 
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
-			'Judge each Chinese character and not the picture that appears before it.' + 
+			'Judge each Chinese character and not the picture that appears before it .' + 
 			'Pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
@@ -191,7 +206,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'The rules are exactly the same:<br/><br/>' + 
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
-			'Judge each Chinese character and not the picture that appears before it.' + 
+			'Judge each Chinese character and not the picture that appears before it. ' + 
 			'Pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
@@ -239,7 +254,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
-			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
+			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="#000000">'+
 			'You have completed the Visual Processing Task.<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
@@ -388,8 +403,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:6,bottom:8},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'20px'}},
-				{location:{right:6,bottom:8},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'20px'}}
+				{location:{left:2,top:2},media:{word:'key: '+ piCurrent.leftKey.toUpperCase()}, css:{color:piCurrent.fontColor,'font-size':'1em'}},
+				{location:{right:2,top:2},media:{word:'key: ' + piCurrent.rightKey.toUpperCase()},  css:{color:piCurrent.fontColor,'font-size':'1em'}},
+				{location:{left:2,top:5},media:{word:leftSortingLabel}, css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}},
+				{location:{right:2,top:5},media:{word:rightSortingLabel},  css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}}
 			];
 		var layout = piCurrent.responses==2 ? layout2 : [];
 			
@@ -528,7 +545,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: [
     		    {
     		        location:{top:3},
-    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#ffffff','font-size':'1em', 'z-index':'100'}
+    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
     		    }
     		],
 			input: [
@@ -1076,7 +1093,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
 						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true, css:{color:piCurrent.fontColor}}, 
-						{inherit:'dummyForLog'},
+						{inherit:'dummyForLog'}
 					]
 				}
 			);
@@ -1150,7 +1167,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
-					stimuli: [ {media:{html:fromTemplate({template:blockInst, blockNum:iBlock+2})}, nolog:true, css:{color:piCurrent.fontColor}}, {inherit:'dummyForLog'}]
+					stimuli: [ {media:{html:fromTemplate({template:blockInst, blockNum:iBlock+2})}, nolog:true}, {inherit:'dummyForLog'}]
 				}
 			);
 			//trials
@@ -1176,7 +1193,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			inherit : "inst",
 			stimuli: [
 				{//The instructions stimulus
-					media:{html:piCurrent.endText,data:{block:blockNum, condition:'end'}}, nolog:true, color:piCurrent.fontColor
+					media:{html:piCurrent.endText,data:{block:blockNum, condition:'end'}}, nolog:true
 				}, 
 				{//For the logging
 					inherit:'dummyForLog'
