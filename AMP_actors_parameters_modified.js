@@ -183,32 +183,32 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Practice trials]</p></div>',
 
-			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			"Practice is now complete and the Visual Processing Task will now begin.<br/><br/>" + 
-			"As a reminder, if you think someone is a more pleasant individual than average, press the 'E' key.<br/><br/>" + 
-			"If you think someone is a less pleasant individual than average, press the 'I' key.<br/><br/>" + 
+			"As a reminder, if you think a person looks more pleasant than average, press the 'E' key.<br/><br/>" + 
+			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
-			'<color="ffffff"> </p></div>',
-			middleBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Continue to start the task. ' + 
+			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
+			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'Continue with the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
+			"If you think a person looks more pleasant than average, press the 'E' key.<br/><br/>" + 
+			"If you think a person looks less pleasant than average, press the 'I' key.<br/><br/>" + 
+			'Judge each person and not the chinese character that appears after it. ' + 
+			'Pictures of chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round blockNum of nBlocks]</p></div>',
-			lastBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
-			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
-			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
+			"If you think a person looks more pleasant than average, press the 'E' key.<br/><br/>" + 
+			"If you think a person looks less pleasant than average, press the 'I' key.<br/><br/>" + 
+			'Judge each person and not the chinese character that appears after it. ' + 
+			'Pictures of chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 

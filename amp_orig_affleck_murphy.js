@@ -56,9 +56,9 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 			],
 		examplePrimeStimulus : 
 		{
-			nameForLogging : 'examplePrime', //Will be used in the logging
+			nameForLogging : 'training', //Will be used in the logging
 			//An array of all media objects for this category.
-			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
+			mediaArray : [{image : 'Control1.jpg'}, {image : 'Control2.jpg'}, {image : 'Control3.jpg'}, {image : 'Control4.jpg'}, {image : 'Control5.jpg'}]
 		},
 
 		base_url : {//Where are your images at?
