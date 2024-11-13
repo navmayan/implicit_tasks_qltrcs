@@ -4,29 +4,29 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 	
 	
 	return ampExtension({
+
 		primeCats :  [
 			{
-				nameForFeedback : 'George Clooney',  //Will be used in the user feedback 
-				nameForLogging : 'george_clooney', //Will be used in the logging
+				nameForFeedback : 'Johnny Depp',  //Will be used in the user feedback 
+				nameForLogging : 'johnny_depp', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'George Clooney1.jpg'}, 
-					{image : 'George Clooney2.jpg'}, 
-					{image : 'George Clooney3.jpg'}, 
-					{image : 'George Clooney4.jpg'}, 
-					{image : 'George Clooney5.jpg'}]
-
+				    {image : 'Johnny Depp1.jpg'}, 
+					{image : 'Johnny Depp2.jpg'}, 
+					{image : 'Johnny Depp3.jpg'}, 
+					{image : 'Johnny Depp4.jpg'}, 
+					{image : 'Johnny Depp5.jpg'}]
 			}, 
 			{
-				nameForFeedback : 'Samuel L. Jackson',  //Will be used in the user feedback 
-				nameForLogging : 'samuel_jackson', //Will be used in the logging
+				nameForFeedback : 'Morgan Freeman',  //Will be used in the user feedback 
+				nameForLogging : 'morgan_freeman', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'Samuel L. Jackson1.jpg'}, 
-					{image : 'Samuel L. Jackson2.jpg'}, 
-					{image : 'Samuel L. Jackson3.jpg'}, 
-					{image : 'Samuel L. Jackson4.jpg'}, 
-					{image : 'Samuel L. Jackson5.jpg'}]
+				    {image : 'Morgan Freeman1.jpg'}, 
+					{image : 'Morgan Freeman2.jpg'}, 
+					{image : 'Morgan Freeman3.jpg'}, 
+					{image : 'Morgan Freeman4.jpg'}, 
+					{image : 'Morgan Freeman5.jpg'}]
 			}
 		],
 

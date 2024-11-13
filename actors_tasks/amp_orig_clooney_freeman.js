@@ -4,6 +4,7 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 	
 	
 	return ampExtension({
+
 		primeCats :  [
 			{
 				nameForFeedback : 'George Clooney',  //Will be used in the user feedback 
@@ -18,15 +19,15 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 
 			}, 
 			{
-				nameForFeedback : 'Samuel L. Jackson',  //Will be used in the user feedback 
-				nameForLogging : 'samuel_jackson', //Will be used in the logging
+				nameForFeedback : 'Morgan Freeman',  //Will be used in the user feedback 
+				nameForLogging : 'morgan_freeman', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'Samuel L. Jackson1.jpg'}, 
-					{image : 'Samuel L. Jackson2.jpg'}, 
-					{image : 'Samuel L. Jackson3.jpg'}, 
-					{image : 'Samuel L. Jackson4.jpg'}, 
-					{image : 'Samuel L. Jackson5.jpg'}]
+				    {image : 'Morgan Freeman1.jpg'}, 
+					{image : 'Morgan Freeman2.jpg'}, 
+					{image : 'Morgan Freeman3.jpg'}, 
+					{image : 'Morgan Freeman4.jpg'}, 
+					{image : 'Morgan Freeman5.jpg'}]
 			}
 		],
 

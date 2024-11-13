@@ -4,29 +4,30 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 	
 	
 	return ampExtension({
+
 		primeCats :  [
 			{
-				nameForFeedback : 'George Clooney',  //Will be used in the user feedback 
-				nameForLogging : 'george_clooney', //Will be used in the logging
+				nameForFeedback : 'Clint Eastwood',  //Will be used in the user feedback 
+				nameForLogging : 'clint_eastwood', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'George Clooney1.jpg'}, 
-					{image : 'George Clooney2.jpg'}, 
-					{image : 'George Clooney3.jpg'}, 
-					{image : 'George Clooney4.jpg'}, 
-					{image : 'George Clooney5.jpg'}]
+				    {image : 'Clint Eastwood1.jpg'}, 
+					{image : 'Clint Eastwood2.jpg'}, 
+					{image : 'Clint Eastwood3.jpg'}, 
+					{image : 'Clint Eastwood4.jpg'}, 
+					{image : 'Clint Eastwood5.jpg'}]
 
 			}, 
 			{
-				nameForFeedback : 'Samuel L. Jackson',  //Will be used in the user feedback 
-				nameForLogging : 'samuel_jackson', //Will be used in the logging
+				nameForFeedback : 'Eddie Murphy',  //Will be used in the user feedback 
+				nameForLogging : 'eddie_murphy', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'Samuel L. Jackson1.jpg'}, 
-					{image : 'Samuel L. Jackson2.jpg'}, 
-					{image : 'Samuel L. Jackson3.jpg'}, 
-					{image : 'Samuel L. Jackson4.jpg'}, 
-					{image : 'Samuel L. Jackson5.jpg'}]
+				    {image : 'Eddie Murphy1.jpg'}, 
+					{image : 'Eddie Murphy2.jpg'}, 
+					{image : 'Eddie Murphy3.jpg'}, 
+					{image : 'Eddie Murphy4.jpg'}, 
+					{image : 'Eddie Murphy5.jpg'}]
 			}
 		],
 
