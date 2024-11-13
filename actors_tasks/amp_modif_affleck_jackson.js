@@ -4,17 +4,18 @@ define(['pipAPI', 'https://navmayan.github.io/implicit_tasks_qltrcs/AMP_actors_p
 	
 	
 	return ampExtension({
+
 		primeCats :  [
 			{
-				nameForFeedback : 'George Clooney',  //Will be used in the user feedback 
-				nameForLogging : 'george_clooney', //Will be used in the logging
+				nameForFeedback : 'Ben Affleck',  //Will be used in the user feedback 
+				nameForLogging : 'ben_affleck', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'George Clooney1.jpg'}, 
-					{image : 'George Clooney2.jpg'}, 
-					{image : 'George Clooney3.jpg'}, 
-					{image : 'George Clooney4.jpg'}, 
-					{image : 'George Clooney5.jpg'}]
+				    {image : 'Ben Affleck1.jpg'}, 
+					{image : 'Ben Affleck2.jpg'}, 
+					{image : 'Ben Affleck3.jpg'}, 
+					{image : 'Ben Affleck4.jpg'}, 
+					{image : 'Ben Affleck5.jpg'}]
 
 			}, 
 			{
