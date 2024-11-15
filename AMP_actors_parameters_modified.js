@@ -186,7 +186,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			"Practice is now complete and the Visual Processing Task will now begin.<br/><br/>" + 
 			"As a reminder, if you think a person looks more pleasant than average, press the 'E' key.<br/><br/>" + 
-			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
+			"If you think a person looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
