@@ -154,7 +154,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
 			'Your job is to judge whether each person is a pleasant individual or an unpleasant individual.<br/><br/>' +
-			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each person is a pleasant or unpleasant individual.<br/><br/>' +
+			'Of course, there are no right or wrong answers. Just report your intuition as to whether each person is a pleasant or unpleasant individual.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
@@ -197,7 +197,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"If you think a person looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a person looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'Judge each person and not the chinese character that appears after it. ' + 
-			'Pictures of chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
+			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 			
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -208,7 +208,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"If you think a person looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a person looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'Judge each person and not the chinese character that appears after it. ' + 
-			'Pictures of chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
+			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' +  
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
