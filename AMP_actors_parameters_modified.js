@@ -161,8 +161,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="ffffff">[Instructions 1/3]</p></div>',
 			exampleBlockInst2: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
-			'If you think someone is a more pleasant individual than average, press the E key on the left.<br/><br/>' + 
-			'If you think someone is a less pleasant individual than average, press the I key on the right.<br/><br/>' + 
+			'If you think someone is a more pleasant person than average, press the E key on the left.<br/><br/>' + 
+			'If you think someone is a less pleasant person than average, press the I key on the right.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
