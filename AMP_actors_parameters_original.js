@@ -153,8 +153,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Now you will complete a Visual Processing Task.<br/><br/>' + 
 			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
-			'Your job is to judge the visual pleasantness of each Chinese character.<br/><br/>' +
-			'Of course, there are no right or wrong answers. JJust report your intuition as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' +
+			'Your job is to judge the pleasantness of each Chinese character.<br/><br/>' +
+			'Of course, there are no right or wrong answers. Just report your intuition as to whether each Chinese character is pleasant or unpleasant.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
@@ -169,8 +169,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="ffffff">[Instructions 2/3]</p></div>',
 			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
-			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters!<br/><br/>' + 
-			'Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
+			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the individuals bias your judgment of the Chinese characters!<br/><br/>' + 
+			'Instead, give us an honest judgment of of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To continue, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
@@ -197,7 +197,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'Judge each Chinese character and not the picture that appears before it. ' + 
-			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
+			'Those items are sometimes distracting. Just go with your gut feelings.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -208,7 +208,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"If you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'Judge each Chinese character and not the picture that appears before it. ' + 
-			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
+			'Those items are sometimes distracting. Just go with your gut feelings.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
