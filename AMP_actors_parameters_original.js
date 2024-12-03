@@ -168,7 +168,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 2/3]</p></div>',
 			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
-			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
+			'It is important to note that the pictures of individuals can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
 			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the individuals bias your judgment of the Chinese characters!<br/><br/>' + 
 			'Instead, give us an honest judgment of of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
